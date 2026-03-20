@@ -15,7 +15,7 @@ class Pd < Formula
   end
 
   def install
-    libexec.install Dir["pd/*"]
+    libexec.install Dir["*"]
     bin.install_symlink libexec/"bin/pd"
   end
 
