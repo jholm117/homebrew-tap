@@ -1,26 +1,26 @@
 class Hr < Formula
   desc "CLI for HackerRank for Work API"
   homepage "https://github.com/jholm117/hackerrank-cli"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jholm117/hackerrank-cli/releases/download/v0.1.2/hr_0.1.2_darwin_arm64.tar.gz"
-      sha256 "5eb5a31a742f990393b1f4fe730541e78a54f5ff2dbe89260aaf5d1d3817b150"
+      url "https://github.com/jholm117/hackerrank-cli/releases/download/v0.1.3/hr_0.1.3_darwin_arm64.tar.gz"
+      sha256 "d12b1c26b3df62b3bbe383feecac1d734f003347c4e107bf7446864b3cc9df88"
     else
-      url "https://github.com/jholm117/hackerrank-cli/releases/download/v0.1.2/hr_0.1.2_darwin_amd64.tar.gz"
-      sha256 "824e7d4e6806bea1438ed0cf6b7504ab8262586f91f9f966c81ebf708a657b83"
+      url "https://github.com/jholm117/hackerrank-cli/releases/download/v0.1.3/hr_0.1.3_darwin_amd64.tar.gz"
+      sha256 "beffa648954072fcdd929935b4b26e6e9b9dca24139b08cf4b8e6dfac4d039f3"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/jholm117/hackerrank-cli/releases/download/v0.1.2/hr_0.1.2_linux_arm64.tar.gz"
-      sha256 "c1aaf1e06c818c81aab8873348a7cab17ec3dc18b0bd041d1953df59877a5188"
+      url "https://github.com/jholm117/hackerrank-cli/releases/download/v0.1.3/hr_0.1.3_linux_arm64.tar.gz"
+      sha256 "ffb32730e4914a3299a637e35f30930fe4314495c31fca3f7b89a968d16524c5"
     else
-      url "https://github.com/jholm117/hackerrank-cli/releases/download/v0.1.2/hr_0.1.2_linux_amd64.tar.gz"
-      sha256 "dd2c27f495fa7338b55ffd5bdc74702e2a8cbc201bd00298aa31fba0b191e4a0"
+      url "https://github.com/jholm117/hackerrank-cli/releases/download/v0.1.3/hr_0.1.3_linux_amd64.tar.gz"
+      sha256 "389a0bd0e271305aaeba176001118a6b17a9ba5b1eb9ce5417a4d9d945897f49"
     end
   end
 
