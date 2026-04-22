@@ -5,20 +5,20 @@
 class Goscaffold < Formula
   desc "Scaffold Go projects with composable layers"
   homepage "https://github.com/jholm117/goscaffold"
-  version "0.2.6"
+  version "0.2.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jholm117/goscaffold/releases/download/v0.2.6/goscaffold_0.2.6_darwin_amd64.tar.gz"
-      sha256 "4aeb22b362eaaa4291a4618c8fff688745324cb28b50d851f417b4caed7308b5"
+      url "https://github.com/jholm117/goscaffold/releases/download/v0.2.7/goscaffold_0.2.7_darwin_amd64.tar.gz"
+      sha256 "f11f058e89aca7817b73e2cd55deb162fce51e84856696ede622c176430d572f"
 
       define_method(:install) do
         bin.install "goscaffold"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jholm117/goscaffold/releases/download/v0.2.6/goscaffold_0.2.6_darwin_arm64.tar.gz"
-      sha256 "7eb2936fae68ba9beed2d37403f7e8aa4a45bb056aae2fceee794244e6beab64"
+      url "https://github.com/jholm117/goscaffold/releases/download/v0.2.7/goscaffold_0.2.7_darwin_arm64.tar.gz"
+      sha256 "baefd61df0d63e0e26681ffd9ee67efff909f6443be4f5f8be93f53dc91fd513"
 
       define_method(:install) do
         bin.install "goscaffold"
@@ -28,15 +28,15 @@ class Goscaffold < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jholm117/goscaffold/releases/download/v0.2.6/goscaffold_0.2.6_linux_amd64.tar.gz"
-      sha256 "266872d4e9e08b5d1640d09350bd9e4fe9bd8587a490056ba844c42429dc57a8"
+      url "https://github.com/jholm117/goscaffold/releases/download/v0.2.7/goscaffold_0.2.7_linux_amd64.tar.gz"
+      sha256 "2c1da777ecb431b7f34e30b0066c479422dab81f60e556748b131f712d1f6de4"
       define_method(:install) do
         bin.install "goscaffold"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jholm117/goscaffold/releases/download/v0.2.6/goscaffold_0.2.6_linux_arm64.tar.gz"
-      sha256 "ba1f3943b186bb0a201deec882c4645c8e185f08af98cc11935e9c7b842ac105"
+      url "https://github.com/jholm117/goscaffold/releases/download/v0.2.7/goscaffold_0.2.7_linux_arm64.tar.gz"
+      sha256 "957f341be5b0daa3dcff4b054942c48351426a8f48460da4611895c73fefe904"
       define_method(:install) do
         bin.install "goscaffold"
       end
